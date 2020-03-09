@@ -2,8 +2,10 @@
 A C++ OOP game harkening back to classic arcade shooters.
 
 # Dev Setup
+- mention dll downloads
 
 # How to Play
+-include exe
 
 # Roadmap
 - update art
