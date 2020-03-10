@@ -1,11 +1,11 @@
 # Bacterium-Coliseum
-A C++ OOP game harkening back to classic arcade shooters.
+A C++ OOP game harkening back to classic arcade shooters. Defend yourself from hordes of bacteria while building your score and utilizing abilites.
 
 # Dev Setup
 - mention dll downloads
 
 # How to Play
--include exe
+- include exe
 
 # Roadmap
 - update art
