@@ -261,9 +261,9 @@ Pit::Pit(double startX, double startY, StudentWorld* pointer)
 	: Actor(IID_PIT, startX, startY, 0, 1, 1, pointer)
 {
 	//each pit contains 5 regularSalmonella, 3 aggressiveSalmonella, and 2 eColi
-	m_regularSalmonella = 5;
-	m_agressiveSalmonella = 3;
-	m_eColi = 2;
+	m_regularSalmonella = 3;
+	m_agressiveSalmonella = 1;
+	m_eColi = 1;
 }
 
 void Pit::doSomething()
@@ -767,7 +767,7 @@ bool Collectible::isWeaponDamageable() const
 //Health class implementation
 
 Health::Health(double startX, double startY, StudentWorld* pointer, double lifeTicks)
-	:Collectible(startX, startY, IID_RESTORE_HEALTH_GOODIE, pointer, lifeTicks, 250)
+	:Collectible(startX, startY, IID_RESTORE_HEALTH_GOODIE, pointer, lifeTicks, 10)
 {
 
 }
@@ -781,7 +781,7 @@ void Health::performFunction()
 //FlameGoodie class implementation
 
 FlameGoodie::FlameGoodie(double startX, double startY, StudentWorld* pointer, double lifeTicks)
-	:Collectible(startX, startY, IID_FLAME_THROWER_GOODIE, pointer, lifeTicks, 300)
+	:Collectible(startX, startY, IID_FLAME_THROWER_GOODIE, pointer, lifeTicks, 10)
 {
 
 }
@@ -794,7 +794,7 @@ void FlameGoodie::performFunction()
 
 //LivesGoodie class implementation
 LivesGoodie::LivesGoodie(double startX, double startY, StudentWorld* pointer, double lifeTicks)
-	:Collectible(startX, startY, IID_EXTRA_LIFE_GOODIE, pointer, lifeTicks, 500)
+	:Collectible(startX, startY, IID_EXTRA_LIFE_GOODIE, pointer, lifeTicks, 10)
 {
 
 }
@@ -808,7 +808,7 @@ void LivesGoodie::performFunction()
 //Fungus class implementation
 
 Fungus::Fungus(double startX, double startY, StudentWorld* pointer, double lifeTicks)
-	:Collectible(startX, startY, IID_FUNGUS, pointer, lifeTicks, -50)
+	:Collectible(startX, startY, IID_FUNGUS, pointer, lifeTicks, -10)
 {
 
 }
@@ -821,7 +821,7 @@ bool Fungus::isHarmful() const
 void Fungus::performFunction()
 {
 	//hurt player by 20 hp
-	getPointerToStudentWorld()->updateSocratesHp(-20);
+	getPointerToStudentWorld()->updateSocratesHp(-10);
 }
 
 
