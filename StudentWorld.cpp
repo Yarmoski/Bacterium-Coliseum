@@ -383,7 +383,7 @@ void StudentWorld::initHelper(double& X, double& Y)
 int StudentWorld::init()
 {
 
-	//set L to the current level (1+)
+	//set L to the current level (starts at one)
 	int L = getLevel();
 
 	//init socrates
@@ -483,7 +483,7 @@ int StudentWorld::move()
 			death++;
 	}
 
-	//add any new objects//
+	//set PI constant
 	const double PI = 4 * atan(1.0);
 
 	//set lifetime to value that potentially changes based on level
@@ -522,13 +522,13 @@ int StudentWorld::move()
 		{
 			m_Actors.push_back(shared_ptr<Actor>(new Health(goodieX, goodieY, this, lifetime)));
 		}
-		//30% chance to spawn flame powerup
-		else if (6 < percentChance && percentChance <= 9)
+		//20% chance to spawn flame powerup
+		else if (6 < percentChance && percentChance <= 8)
 		{
 			m_Actors.push_back(shared_ptr<Actor>(new FlameGoodie(goodieX, goodieY, this, lifetime)));
 		}
-		//10% chance to spawn lives powerup
-		else if (percentChance > 9)
+		//20% chance to spawn lives powerup
+		else if (percentChance > 8)
 		{
 			m_Actors.push_back(shared_ptr<Actor>(new LivesGoodie(goodieX, goodieY, this, lifetime)));
 		}
