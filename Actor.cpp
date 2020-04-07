@@ -789,7 +789,7 @@ FlameGoodie::FlameGoodie(double startX, double startY, StudentWorld* pointer, do
 void FlameGoodie::performFunction()
 {
 	//add 5 flame thrower charges to socrates
-	getPointerToStudentWorld()->getOrUpdateFlames(5);
+	getPointerToStudentWorld()->getOrUpdateFlames(8);
 }
 
 //LivesGoodie class implementation
