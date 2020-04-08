@@ -245,7 +245,7 @@ void Spray::doSomething()
 //Flame class implementation
 
 Flame::Flame(double startX, double startY, int startDirection, StudentWorld* pointer)
-	:Actor(IID_FLAME, startX, startY, startDirection, 1, 1, pointer, 5)
+	:Actor(IID_FLAME, startX, startY, startDirection, 1, 1, pointer, 10)
 {
 }
 
