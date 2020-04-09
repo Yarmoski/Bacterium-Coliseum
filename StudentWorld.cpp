@@ -487,7 +487,7 @@ int StudentWorld::move()
 	const double PI = 4 * atan(1.0);
 
 	//set lifetime to value that potentially changes based on level
-	int lifetime = max(rand() % (300 - 10 * L), 50);
+	int lifetime = max(rand() % (500 - 10 * L), 50);
 
 	//chance variables to appropriate values
 	int chanceFungus = max(510 - (L * 10), 200);
