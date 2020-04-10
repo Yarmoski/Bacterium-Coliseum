@@ -628,7 +628,7 @@ void RegularSalmonella::spawnEnemy(double X, double Y) const
 //AggressiveSalmonella class implementation
 
 AggressiveSalmonella::AggressiveSalmonella(double startX, double startY, StudentWorld* pointer)
-	:Salmonella(startX, startY, pointer, 10, 2)
+	:Salmonella(startX, startY, pointer, 10, 1)
 {
 }
 
@@ -661,7 +661,7 @@ void AggressiveSalmonella::spawnEnemy(double X, double Y) const
 //EColi class implementation
 
 EColi::EColi(double startX, double startY, StudentWorld* pointer)
-	:Enemy(startX, startY, IID_ECOLI, pointer, 5, 4)
+	:Enemy(startX, startY, IID_ECOLI, pointer, 5, 2)
 {
 }
 
