@@ -261,7 +261,7 @@ Pit::Pit(double startX, double startY, StudentWorld* pointer)
 	: Actor(IID_PIT, startX, startY, 0, 1, 1, pointer)
 {
 	//each pit contains 5 regularSalmonella, 3 aggressiveSalmonella, and 2 eColi
-	m_regularSalmonella = 3;
+	m_regularSalmonella = randInt(2, 4);
 	m_agressiveSalmonella = 1;
 	m_eColi = 1;
 }
