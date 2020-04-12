@@ -402,7 +402,7 @@ int StudentWorld::init()
 		initPit(randX, randY);
 	}
 
-	//init food//
+	//init food// 
 
 	//create the lower of 5*L and 25 foods at random locations
 	count = min(5 * L, 25);
