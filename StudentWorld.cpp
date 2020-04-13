@@ -414,8 +414,8 @@ int StudentWorld::init()
 
 	//init dirt//
 
-	//create the higher of 180 - 20*L and 20 dirt at random locations
-	count = max(180 - 20 * L, 20);
+	//create the higher of 180 - 20*L and 27 dirt at random locations
+	count = max(180 - 20 * L, 27);
 	for (int i = 0; i < count; i++)
 	{
 		initHelper(randX, randY);
