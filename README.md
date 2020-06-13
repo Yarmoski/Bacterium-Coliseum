@@ -2,7 +2,9 @@
 A C++ OOP game harkening back to classic arcade shooters. Play as the minature scientist-turned-super-soldier Socrates and defend yourself from hordes of bacteria while building your score and utilizing abilites.
 
 # Quick Start
-Download or clone the repo and simply run the .exe file!
+1) Download or clone the repo
+2) Extract to a directory if necessary then enter that directory
+3) Run the .exe!
 
 Use the left and right arrow keys (for some machines, you may use the A and D keys to move left and right respectively) to move your character around the arena. Use space to fire your primary weapon and enter to fire your powerful secondary weapon. 
 
