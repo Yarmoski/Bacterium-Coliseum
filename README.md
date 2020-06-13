@@ -1,4 +1,4 @@
-# Bacterium-Coliseum
+# Bacterium-Coliseum (Kontagion)
 A C++ OOP game harkening back to classic arcade shooters. Play as the minature scientist-turned-super-soldier Socrates and defend yourself from hordes of bacteria while building your score and utilizing abilites.
 
 # Quick Start
