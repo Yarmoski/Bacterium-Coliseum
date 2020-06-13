@@ -8,6 +8,12 @@ Use the left and right arrow keys (for some machines, you may use the A and D ke
 
 Status info can be found on the top bar when playing the game. Each time to clear a level of enemies, the next level will begin and will be more difficult than the last. Keep an eye out for powerups along your movement path, but beware the poison fungus that can spawn in place of a powerup and damage you upon contact.
 
+## Powerups
+- Restore health
+- Extra Life
+- Restore Flames
+- Fungus (Damages player!)
+
 # Roadmap
 - ~~lower default difficulty~~
 - add difficulty settings
